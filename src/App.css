@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.button-app.custom-button {
+  background-color: red;
+  border-color: blue;
+  color: white;
+}
