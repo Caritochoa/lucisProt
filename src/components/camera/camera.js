@@ -9,11 +9,22 @@ function Camera() {
   const [image, setImage] = useState(null);
 
   const capture = useCallback(() => {
-    const imageSrc = webcamRef.current.getScreenshot();
-    setImage(imageSrc);
-    console.log('Captured image URL:', imageSrc); // Log the image URL
-  }, [webcamRef]);
+    if (webcamRef.current) {
+      const imageSrc = webcamRef.current.getScreenshot();
+      setImage(imageSrc);     
 
+      // Create an Image object to load the captured data URL
+      const img = new Image();//this is the image I must send with post to the backend server.
+      img.onload = () => {
+        // Once the image is loaded, you can access its properties
+        const imgUrl = image        
+        console.log('Image Format:', imageSrc.substring(5, imageSrc.indexOf(';'))); // Extract the format from the Data URL
+      };
+      img.src = imageSrc;
+    } else {
+      console.error('Webcam reference is not available');
+    }
+  }, [webcamRef]);
   return (
     <div className="camera-container">
       <h1>Camera Component</h1>
@@ -30,6 +41,7 @@ function Camera() {
         <div className="image-preview">
           <h2>Captured Photo:</h2>
           <img src={image} alt="Captured" />
+          <p>información de la foto</p>
         </div>
       )}
     </div>
