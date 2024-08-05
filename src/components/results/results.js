@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Results() {
   
   return (
-    <div>
-      
+    <div>      
       <h1>Results Component</h1>
     </div>
   );
