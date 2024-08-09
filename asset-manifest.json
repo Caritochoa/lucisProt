@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lucisProt/static/css/main.03969995.css",
-    "main.js": "/lucisProt/static/js/main.70ce0290.js",
+    "main.js": "/lucisProt/static/js/main.9abb3dd2.js",
     "index.html": "/lucisProt/index.html",
     "main.03969995.css.map": "/lucisProt/static/css/main.03969995.css.map",
-    "main.70ce0290.js.map": "/lucisProt/static/js/main.70ce0290.js.map"
+    "main.9abb3dd2.js.map": "/lucisProt/static/js/main.9abb3dd2.js.map"
   },
   "entrypoints": [
     "static/css/main.03969995.css",
-    "static/js/main.70ce0290.js"
+    "static/js/main.9abb3dd2.js"
   ]
 }
