@@ -41,7 +41,7 @@ function Camera() {
         <div className="image-preview">
           <h2>Captured Photo:</h2>
           <img src={image} alt="Captured" />
-          <p>información de la foto</p>
+          <p>Inf de la foto</p>
         </div>
       )}
     </div>

@@ -4,7 +4,6 @@ import Home from './components/home/home';
 import Camera from './components/camera/camera';
 import Results from './components/results/results';
 
-
 function App() {
   return (    
     <div className="App">
