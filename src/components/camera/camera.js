@@ -1,27 +1,14 @@
 import React, { useRef, useState, useCallback } from 'react';
 import Webcam from 'react-webcam';
 import { Button } from 'react-bootstrap';
+import { handlerSendRequest } from '../../utils/apiUtils';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './camera.css';
+
 
 function Camera() {
   const webcamRef = useRef(null);
   const [image, setImage] = useState(null);
-
-  const handlerSendRequest = async () => {
-    try {
-      const response = await fetch('https://lucisbackexp.onrender.com/');
-      
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-  
-      const data = await response.text(); // Asumiendo que la respuesta es texto plano
-      alert(data); // Aquí deberías recibir "Hola Mundo"
-    } catch (error) {
-      console.error('Hubo un problema con la operación fetch:', error);
-    }
-  };
 
   const capture = useCallback(() => {
     if (webcamRef.current) {
@@ -32,7 +19,7 @@ function Camera() {
       const img = new Image();//this is the image I must send with post to the backend server.
       img.onload = () => {
         // Once the image is loaded, you can access its properties
-        const imgUrl = image        
+        //const imgUrl = image        
         console.log('Image Format:', imageSrc.substring(5, imageSrc.indexOf(';'))); // Extract the format from the Data URL
       };
       img.src = imageSrc;
@@ -53,7 +40,7 @@ function Camera() {
   className="capture-button"
   onClick={() => {
     capture(); 
-    handlerSendRequest(); 
+    handlerSendRequest();     
   }}
 >
   Capture Photo
