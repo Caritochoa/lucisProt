@@ -15,10 +15,18 @@ function Home() {
   return (  
     <div className='home-wrapper'>
       <Header/>
-      <div className="home-container">      
+      <div className="home-container">
+        <div className='home-title-container'>
+          <h2>AI-Powered Health Insights</h2>
+        </div>
+        <div className='home-text-container'>  
+          <h5>Take a picture, get instant insights. Our AI-powered tool helps detect potential melanoma easily and quickly, early detection made simple!</h5>     
+        </div>
+        <div className='home-start-button'>
         <Button variant="secondary" className="center-button" onClick={handleButtonClick}>
            Start
         </Button>
+        </div>
       </div>
     </div>
   );
