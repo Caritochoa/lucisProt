@@ -58,7 +58,8 @@ function Camera() {
                 <h2>Captured Photo:</h2>
                 <img src={image} alt="Captured" />              
               </div>
-            )}
+            )}            
+
         <Button variant="secondary" className="results-button" onClick={goToResultsHandleClick}>
           See my results
         </Button>    

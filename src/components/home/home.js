@@ -16,8 +16,8 @@ function Home() {
     <div className='home-wrapper'>
       <Header/>
       <div className="home-container">      
-        <Button className="center-button" onClick={handleButtonClick}>
-           Go to Camera
+        <Button variant="secondary" className="center-button" onClick={handleButtonClick}>
+           Start
         </Button>
       </div>
     </div>
