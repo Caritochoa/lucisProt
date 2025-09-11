@@ -19,6 +19,7 @@ function Camera() {
       setImage(imageSrc);     
       
       const img = new Image();//img en base 64.
+      
       img.onload = () => {        
         console.log("*******************img*****************", img);              
         sendImageToBackend(img);
