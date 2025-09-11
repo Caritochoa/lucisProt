@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/lucisProt/static/css/main.03969995.css",
-    "main.js": "/lucisProt/static/js/main.4f14a100.js",
+    "main.css": "/lucisProt/static/css/main.e0412280.css",
+    "main.js": "/lucisProt/static/js/main.2543c5d3.js",
+    "static/media/logo_lucis.png": "/lucisProt/static/media/logo_lucis.6ec6699bf7a9e2998595.png",
     "index.html": "/lucisProt/index.html",
-    "main.03969995.css.map": "/lucisProt/static/css/main.03969995.css.map",
-    "main.4f14a100.js.map": "/lucisProt/static/js/main.4f14a100.js.map"
+    "main.e0412280.css.map": "/lucisProt/static/css/main.e0412280.css.map",
+    "main.2543c5d3.js.map": "/lucisProt/static/js/main.2543c5d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.03969995.css",
-    "static/js/main.4f14a100.js"
+    "static/css/main.e0412280.css",
+    "static/js/main.2543c5d3.js"
   ]
 }
